@@ -1,0 +1,34 @@
+.background-grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -10;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+}
+
+.content-wrapper {
+    padding: 0rem 2rem 0 2rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 481px) {
+    /* Tablet */
+}
+
+@media screen and (min-width: 768px) {
+    /* Large mobile */
+}
+
+@media screen and (min-width: 1025px) {
+    /* Desktop */
+}

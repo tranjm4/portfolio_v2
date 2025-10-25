@@ -1,0 +1,77 @@
+.stripe1 {
+    position: fixed;
+    background-color: #9D8A6E;
+    top: 70vh;
+    left: -30vw;
+
+    height: 10rem;
+    width: 180vw;
+    /* opacity: 0.5; */
+
+    box-shadow: 10px 30px 50px black;
+    rotate: -20deg;
+
+    z-index: -1;
+}
+
+.stripe2 {
+    position: fixed;
+    background-color: var(--secondary-color);
+    top: 50vh;
+    left: -20vw;
+    z-index: -3;
+    height: 3rem;
+    width: 200vw;
+
+    box-shadow: inset 0rem 1rem 2rem black, inset -1rem -1rem 2rem grey;
+    rotate: 30deg;
+}
+
+.stripe3 {
+    position: fixed;
+    background-color: var(--tertiary-color);
+    top: 55vh;
+    left: 30vw;
+    height: 1rem;
+    width: 100vw;
+
+    z-index: -2;
+
+    transform-origin: right center;
+
+    box-shadow: inset 0.1rem 0.1rem 1rem black;
+    rotate: 30deg;
+}
+
+@media (prefers-color-scheme: light) {
+    .stripe2 {
+        box-shadow: inset 0rem 0.4rem 1rem black, inset 0rem 1rem 2rem grey;
+        background-color: var(--secondary-color);
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .stripe1 {
+        height: 9rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .stripe1 {
+        height: 8rem;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .stripe1 {
+        height: 6rem;
+    }
+
+    /* .stripe2 {
+        top: 40vh;
+    } */
+
+    .stripe3 {
+        top: 80vh;
+    }
+}

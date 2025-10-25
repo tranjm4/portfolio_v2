@@ -1,0 +1,62 @@
+:root {
+  font-family: "Ledger", serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 14px;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #17313D;
+  --primary-color-lighter: #2D5F76;
+  --secondary-color: #dccebf;
+  --secondary-color-darker: #6a5339;
+  --tertiary-color: #DFB97F;
+  --tertiary-color-darker: #d6a55c;
+  --light-color: #DCCFC1;
+
+  --tabs-base-level: 25vh;
+  --content-base-level: 30vh;
+
+  color: var(--light-color);
+  background-color: var(--primary-color);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+  }
+}
+
+@media screen and (min-width: 481px) {
+
+  /* Tablet */
+  :root {
+    font-size: 16px;
+    --tabs-base-level: 28vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  /* Large mobile */
+  :root {
+    font-size: 18px;
+    --tabs-base-level: 10vh;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+
+  /* Desktop */
+  :root {
+    font-size: 24px;
+  }
+}

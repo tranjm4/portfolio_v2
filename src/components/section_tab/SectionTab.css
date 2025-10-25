@@ -1,0 +1,132 @@
+.tabs-header {
+    position: fixed;
+    top: 8vh;
+    left: -50px;
+    rotate: 90deg;
+    z-index: 3;
+    transform-origin: left bottom;
+    transition: ease-in-out 0.3s;
+}
+
+.tabs-container {
+    display: flex;
+    flex-direction: row;
+    /* rotate: 90deg; */
+}
+
+.tabs-container button {
+    border: none;
+    font-family: "Ledger", serif;
+    font-size: 1.5rem;
+}
+
+.tabs-container button:hover {
+    transform: translateY(-10px);
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.section-tab {
+    height: max-content;
+
+    box-shadow: 0 0 10px black;
+    font-size: 1.2rem;
+
+    display: flex;
+    justify-content: center;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: calc(0.5rem + 50px);
+
+    border-top-left-radius: 0.1rem;
+    border-top-right-radius: 0.4rem;
+
+    margin-left: 1rem;
+
+    transition: ease-in-out 0.3s;
+}
+
+.section-tab:hover {
+    box-shadow: 0 0 10px white;
+}
+
+.section-tab:first-child {
+    margin: 0;
+}
+
+/* TODO: Add on-hover popout animations on tabs */
+
+.about-tab {
+    background-color: var(--primary-color-lighter);
+}
+
+.projects-tab {
+    background-color: var(--tertiary-color-darker);
+    color: var(--primary-color);
+}
+
+.skills-tab {
+    background-color: var(--secondary-color-darker)
+}
+
+.photography-tab {
+    background-color: var(--light-color);
+    color: black;
+}
+
+.contact-tab {
+    background-color: var(--primary-color);
+}
+
+
+@media (prefers-color-scheme: light) {}
+
+@media screen and (min-width: 481px) {
+    .tabs-header {
+        top: 10vh;
+    }
+
+    .section-tab {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tabs-header {
+        top: 0;
+    }
+
+    .section-tab {
+        font-size: 1rem;
+    }
+
+    .tabs-container button {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .section-tab {
+        margin-left: 0.5rem;
+    }
+
+    .section-tab:first {
+        margin-left: 0;
+    }
+
+    .section-tab {
+        font-size: 0.8rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+
+    .tabs-container button {
+        font-size: 1rem;
+    }
+
+    .tabs-header {
+        top: 0;
+    }
+}

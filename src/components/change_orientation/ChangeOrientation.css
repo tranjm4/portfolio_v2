@@ -1,0 +1,23 @@
+.change-orientation-container {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.change-orientation-animation {
+    height: 5rem;
+    width: 10rem;
+    border: 6px solid;
+    border-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+@media (prefers-color-scheme: light) {
+    .change-orientation-animation {
+        border-color: var(--primary-color);
+    }
+}
