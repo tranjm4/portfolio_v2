@@ -1,6 +1,6 @@
 import React from 'react';
 import "./ChangeOrientation.css";
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 
 const ChangeOrientation: React.FC = () => {
     return (

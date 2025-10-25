@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import "./Hero.css";
 import TypeWriter from 'typewriter-effect';
-import { motion, useSpring, useTransform, useScroll } from "motion/react";
+import { motion, useSpring, useTransform, useScroll } from "framer-motion";
 
 const Hero: React.FC = () => {
   const [showH2, setShowH2] = useState(false);
