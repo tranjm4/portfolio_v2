@@ -1,6 +1,6 @@
 import React from 'react';
 import "./BgStripe.css";
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'motion/react';
 
 const BgStripe: React.FC = () => {
     const { scrollYProgress } = useScroll();

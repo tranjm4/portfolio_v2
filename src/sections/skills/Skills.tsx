@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import "./Skills.css"
-import { motion, useScroll, useTransform, useSpring, useInView } from 'framer-motion';
+import { motion, useScroll, useTransform, useSpring, useInView } from 'motion/react';
 
 interface Skill {
   name: string;

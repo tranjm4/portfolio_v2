@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import "./Contact.css";
-import { motion, useInView, useScroll, useSpring, useTransform } from 'framer-motion';
+import { motion, useInView, useScroll, useSpring, useTransform } from 'motion/react';
 
 interface ContactEntry {
     name: string;

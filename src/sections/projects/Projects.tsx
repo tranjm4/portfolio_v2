@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { motion, useTransform, useScroll, useSpring } from "framer-motion";
+import { motion, useTransform, useScroll, useSpring } from "motion/react";
 import "./Projects.css";
 
 interface ProjectEntry {

@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Photography.css";
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 const Photography: React.FC = () => {
   return (

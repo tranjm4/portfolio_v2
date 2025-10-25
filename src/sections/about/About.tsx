@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+import { motion, useScroll, useSpring, useTransform } from 'motion/react';
 import "./About.css";
 
 const About: React.FC = () => {
